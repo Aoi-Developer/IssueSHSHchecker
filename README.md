@@ -26,4 +26,4 @@ shsh.shを実行すると検索が開始されます
 以下コマンドを使用すればgitからcloneすることなく実行することも可能です
 
 
-例:) bash <(curl -s https://otintin.world/script/shsh.sh)
+例:) bash <(curl -s https://raw.githubusercontent.com/Aoi-Developer/IssueSHSHchecker/main/shsh.sh)
