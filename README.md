@@ -25,3 +25,22 @@ shsh.shを実行すると検索が開始されます
 例:) bash Issue_SHSH_checker.sh iPhone10,3 8237910564814894  
 
 ![test](Docs/shsh.png)
+
+
+
+# Credits
+
+@tihmstar  
+https://github.com/tihmstar/tsschecker
+https://github.com/tihmstar/partialZipBrowser  
+
+@m1stadev  
+https://github.com/m1stadev/ios-beta-api
+
+
+#取得元
+https://github.com/m1stadev/ios-beta-api  
+https://api.ipsw.me/
+
+
+
