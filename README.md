@@ -38,7 +38,7 @@ https://github.com/tihmstar/partialZipBrowser
 https://github.com/m1stadev/ios-beta-api
 
 
-#取得元
+# 取得元  
 https://github.com/m1stadev/ios-beta-api  
 https://api.ipsw.me/
 
