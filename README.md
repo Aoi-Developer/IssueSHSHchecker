@@ -16,13 +16,13 @@ MacOSはHomebrewをインストールしてください
 
 shsh.shを実行すると検索が開始されます  
 
-例:) bash Issue_SHSH_checker.sh iPhone10,3  
+例:) bash shsh.sh iPhone10,3  
 
 ![test](Docs/test.png)
 
 引数にECIDを指定するとベータ版を含め発行中のSHSHを全て取得できます  
 
-例:) bash Issue_SHSH_checker.sh iPhone10,3 8237910564814894  
+例:) bash shsh.sh iPhone10,3 8237910564814894  
 
 ![test](Docs/shsh.png)
 
