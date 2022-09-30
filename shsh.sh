@@ -118,7 +118,7 @@ if [ $# = 2 ]; then
     numbershsh=$(( $numbershsh+1 ))
     pzb -g BuildManifest.plist $(echo $STR3 | jq -r '.url' 2>/dev/null | sed -n `echo $numbershsh`P)
     tsschecker -d $1 -e $2 -m BuildManifest.plist --generator 0x1111111111111111 -s
-    rm BuildManifest.plist
+    mv BuildManifest.plist ../$(echo $STR3 | jq -r '.buildid' 2>/dev/null | sed -n `echo $numbershsh`P).plist
   done
   echo $STR3 | jq -r '. | .result = (.buildid|tostring) + " " + .version | .result' 2>/dev/null | sed "s/^/  /g"
   echo `pwd` $(echo $STR3 | jq -r '. | .result = (.buildid|tostring) + " " + .version | .result' 2>/dev/null | wc -l) shsh saves
