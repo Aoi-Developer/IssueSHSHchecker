@@ -20,7 +20,7 @@ shsh.shを実行すると検索が開始されます
 
 ![test](Docs/test.png)
 
-引数にECIDを指定するとベータ版を含め発行中のSHSHを全て取得できます  
+引数にECIDを指定するとPwndfuで復元できるベータ版を含め発行中のSHSHを全て取得できます  
 
 例:) bash shsh.sh iPhone10,3 8237910564814894  
 
