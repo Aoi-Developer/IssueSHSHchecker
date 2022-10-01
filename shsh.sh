@@ -23,7 +23,7 @@ if [ $? -ne 0 ] ; then
   elif [ "$(expr substr $(uname -s) 1 5)" == 'Linux' ]; then
     #Ubuntuの場合
     sudo apt update
-    sudo apt install jq
+    sudo apt install jq -y
   fi
 fi
 
@@ -66,7 +66,7 @@ if [ $? -ne 0 ] ; then
     which curl > /dev/null 2>&1 && which unzip > /dev/null 2>&1
     if [ $? -ne 0 ] ; then
       sudo apt update
-      sudo apt install curl unzip jq
+      sudo apt install curl unzip jq -y
     fi
     curl -OL https://github.com/tihmstar/partialZipBrowser/releases/download/36/buildroot_ubuntu-latest.zip
     unzip buildroot_ubuntu-latest.zip buildroot_ubuntu-latest/usr/local/bin/pzb
