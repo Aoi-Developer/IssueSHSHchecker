@@ -119,6 +119,7 @@ if [ $# = 2 ]; then
     pzb -g BuildManifest.plist $(echo $STR3 | jq -r '.url' 2>/dev/null | sed -n `echo $numbershsh`P)
     tsschecker -d $1 -e $2 -m BuildManifest.plist --generator 0x1111111111111111 -s
     mv BuildManifest.plist ../$(echo $STR3 | jq -r '.buildid' 2>/dev/null | sed -n `echo $numbershsh`P).plist
+    rm -f BuildManifest.plist
   done
   echo $STR3 | jq -r '. | .result = (.buildid|tostring) + " " + .version | .result' 2>/dev/null | sed "s/^/  /g"
   echo `pwd` $(echo $STR3 | jq -r '. | .result = (.buildid|tostring) + " " + .version | .result' 2>/dev/null | wc -l) shsh saves
@@ -132,7 +133,6 @@ echo "   (bash Issue_SHSH_checker.sh iPhone10,3)"
 echo "  with two arguments:) Get all issued SHSH"
 echo "   (bash Issue_SHSH_checker.sh iPhone10,3 8237910564814894)"
 echo
-ß
 
 
 
