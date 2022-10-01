@@ -1,26 +1,27 @@
 # Issue SHSH checker
 
-復元可能なiOSバージョンをベータ版も含め簡単に確認 及び取得できるbashスクリプトです
+A bash script that allows you to easily check and obtain restorable iOS versions, including beta versions.  
 
 
-# 対応OS
+# Available OS
 
-MacOSとintel_x86_64_Debian系で使用できます。
+MacOS  
+intel_x86_64_Debian  
 
-# 依存関係
+# dependencies
 
-ほとんどの依存関係は自動で解決できますがLinuxのみtsscheckerのインストールが必要です  
-MacOSはHomebrewをインストールしてください  
+Most dependencies can be resolved automatically, but only Linux requires tsschecker installation  
+For MacOS, please install Homebrew  
 
-# 実行の仕方
+# Execution method
 
-shsh.shを実行すると検索が開始されます  
+Running shsh.sh will start searching
 
 例:) bash shsh.sh iPhone10,3  
 
 ![test](Docs/test.png)
 
-引数にECIDを指定するとPwndfuで復元できるベータ版を含め発行中のSHSHを全て取得できます  
+If you specify ECID as an argument, you can get all issued SHSH including the beta version that can be restored with Pwndfu  
 
 例:) bash shsh.sh iPhone10,3 8237910564814894  
 
