@@ -17,13 +17,13 @@ For MacOS, please install Homebrew
 
 Running shsh.sh will start searching
 
-例:) bash shsh.sh iPhone10,3  
+例:) bash <(curl -s https://raw.githubusercontent.com/Aoi-Developer/IssueSHSHchecker/Ver2.0/shsh.sh) iPhone10,3  
 
 ![test](Docs/test.png)
 
 If you specify ECID as an argument, you can get all issued SHSH including the beta version that can be restored with Pwndfu  
 
-例:) bash shsh.sh iPhone10,3 8237910564814894  
+例:) bash <(curl -s https://raw.githubusercontent.com/Aoi-Developer/IssueSHSHchecker/Ver2.0/shsh.sh) iPhone10,3 8237910564814894  
 
 ![test](Docs/shsh.png)
 
