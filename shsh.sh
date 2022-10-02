@@ -93,8 +93,9 @@ if [ $? -ne 0 ] ; then
     source ~/.zshrc
   elif [ "$(expr substr $(uname -s) 1 5)" == 'Linux' ]; then
     #Ubuntuの場合
-    echo "E:tsschecker command not installed"
-    exit 1
+    curl -OL https://dl.dropboxusercontent.com/s/nw0bkr1xu7h84qf/tsschecker_linux
+    sudo mv tsschecker_linux /usr/bin/tsschecker
+    sudo chmod -R 777 /usr/bin/tsschecker
   fi
 fi
 
