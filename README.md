@@ -10,8 +10,7 @@ intel_x86_64_Debian
 
 # dependencies
 
-Most dependencies can be resolved automatically, but only Linux requires tsschecker installation  
-For MacOS, please install Homebrew  
+MacOS, please install Homebrew  
 
 # Execution method
 
