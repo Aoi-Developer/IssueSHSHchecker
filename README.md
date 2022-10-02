@@ -15,7 +15,9 @@ For MacOS, please install Homebrew
 
 # Execution method
 
-Running shsh.sh will start searching
+Usage: bash Issue_SHSH_checker.sh [device MODEL] [ECID] [apNonce]  
+
+Running shsh.sh will start searching  
 
 例:) bash <(curl -s https://raw.githubusercontent.com/Aoi-Developer/IssueSHSHchecker/Ver2.1/shsh.sh) iPhone10,3  
 
