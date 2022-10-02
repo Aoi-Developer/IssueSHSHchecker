@@ -27,7 +27,9 @@ If you specify ECID as an argument, you can get all issued SHSH including the be
 
 ![test](Docs/shsh.png)
 
+If you specify apNonce as an argument, you can get all issued SHSHs with apNonce specified  
 
+例:) bash <(curl -s https://raw.githubusercontent.com/Aoi-Developer/IssueSHSHchecker/Ver2.0/shsh.sh) iPhone10,3 8237910564814894 0x1111111111111111  
 
 # Credits
 
