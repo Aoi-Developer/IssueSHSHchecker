@@ -72,7 +72,7 @@ if [ $? -ne 0 ] ; then
     unzip buildroot_ubuntu-latest.zip buildroot_ubuntu-latest/usr/local/bin/pzb
     rm -f buildroot_ubuntu-latest.zip
     sudo cp buildroot_ubuntu-latest/usr/local/bin/pzb /usr/bin/
-    sudo chmod -R 777 /usr/bin/pzb
+    sudo chmod -R 755 /usr/bin/pzb
     rm -rf buildroot_ubuntu-latest
   fi
 fi
@@ -93,9 +93,8 @@ if [ $? -ne 0 ] ; then
     source ~/.zshrc
   elif [ "$(expr substr $(uname -s) 1 5)" == 'Linux' ]; then
     #Ubuntuの場合
-    curl -OL https://dl.dropboxusercontent.com/s/nw0bkr1xu7h84qf/tsschecker_linux
-    sudo mv tsschecker_linux /usr/bin/tsschecker
-    sudo chmod -R 777 /usr/bin/tsschecker
+    echo "E:tsschecker command not installed"
+    exit 1
   fi
 fi
 
