@@ -17,21 +17,21 @@ MacOS, please install Homebrew
 Usage: bash Issue_SHSH_checker.sh [device MODEL] [ECID] [apNonce]  
 
 Running shsh.sh will start searching  
-
-例:) bash <(curl -s https://raw.githubusercontent.com/Aoi-Developer/IssueSHSHchecker/Ver2.1/shsh.sh) iPhone10,3  
-
+```sh
+bash <(curl -s https://raw.githubusercontent.com/Aoi-Developer/IssueSHSHchecker/Ver2.1/shsh.sh) iPhone10,3  
+```
 ![test](Docs/test.png)
 
 If you specify ECID as an argument, you can get all issued SHSH including the beta version that can be restored with Pwndfu  
-
-例:) bash <(curl -s https://raw.githubusercontent.com/Aoi-Developer/IssueSHSHchecker/Ver2.1/shsh.sh) iPhone10,3 8237910564814894  
-
+```sh
+bash <(curl -s https://raw.githubusercontent.com/Aoi-Developer/IssueSHSHchecker/Ver2.1/shsh.sh) iPhone10,3 8237910564814894  
+```
 ![test](Docs/shsh.png)
 
 If you specify apNonce as an argument, you can get all issued SHSHs with apNonce specified  
-
-例:) bash <(curl -s https://raw.githubusercontent.com/Aoi-Developer/IssueSHSHchecker/Ver2.1/shsh.sh) iPhone10,3 8237910564814894 0x1111111111111111  
-
+```sh
+bash <(curl -s https://raw.githubusercontent.com/Aoi-Developer/IssueSHSHchecker/Ver2.1/shsh.sh) iPhone10,3 8237910564814894 0x1111111111111111  
+```
 # Credits
 
 @tihmstar  
