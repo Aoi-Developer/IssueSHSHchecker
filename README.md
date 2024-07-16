@@ -43,7 +43,7 @@ https://github.com/m1stadev/ios-beta-api
 
 
 # 取得元  
-https://github.com/m1stadev/ios-beta-api  
+https://aoiblog.jp/betas 
 https://api.ipsw.me/
 
 

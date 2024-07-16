@@ -2,7 +2,7 @@
 
 echo "#Issue SHSH checker Ver.2.1"
 release=$(curl -s "https://api.ipsw.me/v4/device/`echo $1`?type=ipsw" | jq ".firmwares[] | select(.signed == "true")" 2>/dev/null)
-beta=$(curl -s "https://api.m1sta.xyz/betas/`echo $1`" | jq ".[] | select(.signed == "true")" 2>/dev/null)
+beta=$(curl -s "http://aoiblog.jp/betas/`echo $1`" | jq '.firmwares[] | select(.signed == "true")' 2>/dev/null)
 STR3="$beta$release"
 #jqコマンドを確認します
 which jq >/dev/null 2>&1
